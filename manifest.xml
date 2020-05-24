@@ -8,8 +8,8 @@
   <Description DefaultValue="A template to get started."/>
   <!-- <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/> -->
   <!-- <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-80.png"/> -->
-  <IconUrl DefaultValue="https://gitcdn.link/repo/gabrielecalvo/outlook_quicklinks/master/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://gitcdn.link/repo/gabrielecalvo/outlook_quicklinks/master/assets/icon-80.png"/>
+  <IconUrl DefaultValue="https://raw.githubusercontent.com/gabrielecalvo/outlook_quicklinks/master/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://raw.githubusercontent.com/gabrielecalvo/outlook_quicklinks/master/assets/icon-80.png"/>
   <SupportUrl DefaultValue="https://stackoverflow.com"/>
   <AppDomains>
     <AppDomain>stackoverflow.com</AppDomain>
@@ -26,7 +26,7 @@
     <Form xsi:type="ItemRead">
       <DesktopSettings>
         <!-- <SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/> -->
-        <SourceLocation DefaultValue="https://gitcdn.link/repo/gabrielecalvo/outlook_quicklinks/master/src/taskpane/taskpane.html"/>
+        <SourceLocation DefaultValue="https://gabrielecalvo.github.io/outlook_quicklinks/src/taskpane/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -102,13 +102,13 @@
         <!-- <bt:Image id="QuickLinks.Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
         <bt:Image id="QuickLinks.Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
         <bt:Image id="QuickLinks.Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/> -->
-        <bt:Image id="QuickLinks.Icon.16x16" DefaultValue="https://gitcdn.link/repo/gabrielecalvo/outlook_quicklinks/master/assets/icon-16.png"/>
-        <bt:Image id="QuickLinks.Icon.32x32" DefaultValue="https://gitcdn.link/repo/gabrielecalvo/outlook_quicklinks/master/assets/icon-32.png"/>
-        <bt:Image id="QuickLinks.Icon.80x80" DefaultValue="https://gitcdn.link/repo/gabrielecalvo/outlook_quicklinks/master/assets/icon-80.png"/>
+        <bt:Image id="QuickLinks.Icon.16x16" DefaultValue="https://raw.githubusercontent.com/gabrielecalvo/outlook_quicklinks/master/assets/icon-16.png"/>
+        <bt:Image id="QuickLinks.Icon.32x32" DefaultValue="https://raw.githubusercontent.com/gabrielecalvo/outlook_quicklinks/master/assets/icon-32.png"/>
+        <bt:Image id="QuickLinks.Icon.80x80" DefaultValue="https://raw.githubusercontent.com/gabrielecalvo/outlook_quicklinks/master/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
         <!-- <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/> -->
-        <bt:Url id="Taskpane.Url" DefaultValue="https://gitcdn.link/repo/gabrielecalvo/outlook_quicklinks/master/src/taskpane/taskpane.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://gabrielecalvo.github.io/outlook_quicklinks/src/taskpane/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="QuickLinks"/>
