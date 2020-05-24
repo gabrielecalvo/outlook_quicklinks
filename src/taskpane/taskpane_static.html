@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<script>
+  items = [
+    { text: "Colors", icon: "PageArrowRight" },
+    { email: "blue@colors.com", text: "Choose Blue!" },
+    { email: "red@colors.com", text: "No, Red!" },
+    { text: "Numbers", icon: "AddFriend" },
+    { email: "fortytwo@numbers.com", text: "42 it the way" }
+  ];
+</script>
+
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -14,24 +24,46 @@
   </head>
 
   <body class="ms-font-m ms-welcome ms-Fabric">
-    <section id="sideload-msg" class="ms-welcome__main">
-      <p class="ms-font-xs">Please sideload your add-in to see app body.</p>
-    </section>
-    <main id="app-body" class="ms-welcome__main" style="display: none;">
+    <main id="app-body" class="ms-welcome__main" style="display: flex;">
       <div>
         <p id="log"></p>
         <ul id="quicklinkslist" class="ms-List ms-welcome__features"></ul>
       </div>
     </main>
+
     <script>
-      window.items = [
-        { text: "Colors", icon: "PageArrowRight" },
-        { email: "blue@colors.com", text: "Choose Blue!" },
-        { email: "red@colors.com", text: "No, Red!" },
-        { text: "Numbers", icon: "AddFriend" },
-        { email: "fortytwo@numbers.com", text: "42 it the way" }
-      ];
+      function fillList() {
+        var ul = document.getElementById("quicklinkslist");
+
+        items.forEach(function(obj) {
+          if ("icon" in obj) {
+            createSecionHeader(ul, obj);
+          } else {
+            createItemLink(ul, obj);
+          }
+        });
+      }
+
+      function createSecionHeader(ul, obj) {
+        let p = document.createElement("p");
+        p.innerHTML +=
+          "<i class='ms-Icon ms-Icon--" +
+          obj.icon +
+          " ms-font-xl'></i><span class='ms-font-l'> " +
+          obj.text +
+          "</span>";
+        ul.appendChild(p);
+      }
+
+      function createItemLink(ul, obj) {
+        let li = document.createElement("li");
+        let subject = "subject" in obj ? obj.subject : obj.text;
+        li.classList.add("ms-ListItem");
+        li.innerHTML = '<a href="mailto:' + obj.email + "?subject=" + subject + ' it the way">' + obj.text + "</a>";
+        ul.appendChild(li);
+      }
+
+      fillList();
     </script>
-    <script src="taskpane_static.js"></script>
   </body>
 </html>
